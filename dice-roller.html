@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>    <link href="ichor.css" rel='stylesheet' type="text/css">
+    <title>Dice-Roller</title>
+</head>
+<body>
+    
+    <div class="center">
+        <h1 id="diceroller">DICE ROLLER</h1>
+      <table id="roller">
+    <tr>
+          <th>Number of Dice</th>
+        <th>Type</th>
+        <th>Modifier</th>
+        <th>Result</th>
+          </tr>
+          <tr>
+          <td><input type="text" id="d2die" size="1"></td>
+          <td>d2</td>
+              <td><input type="text" id="d2mod" size="1"></td>
+              <td><span id="d2result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d3die" size="1"></td>
+          <td>d3</td>
+              <td><input type="text" id="d3mod" size="1"></td>
+              <td><span id="d3result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d4die" size="1"></td>
+          <td>d4</td>
+              <td><input type="text" id="d4mod" size="1"></td>
+              <td><span id="d4result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d6die" size="1"></td>
+          <td>d6</td>
+              <td><input type="text" id="d6mod" size="1"></td>
+              <td><span id="d6result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d8die" size="1"></td>
+          <td>d8</td>
+              <td><input type="text" id="d8mod" size="1"></td>
+              <td><span id="d8result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d10die" size="1"></td>
+          <td>d10</td>
+              <td><input type="text" id="d10mod" size="1"></td>
+              <td><span id="d10result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d12die" size="1"></td>
+          <td>d12</td>
+              <td><input type="text" id="d12mod" size="1"></td>
+              <td><span id="d12result">0</span></td>
+          </tr>
+           <tr>
+          <td><input type="text" id="d20die" size="1"></td>
+          <td>d20</td>
+              <td><input type="text" id="d20mod" size="1"></td>
+              <td><span id="d20result">0</span></td>
+          </tr>
+          <tr>
+          <td><input type="text" id="d100die" size="1"></td>
+          <td>d100</td>
+              <td><input type="text" id="d100mod" size="1"></td>
+              <td><span id="d100result">0</span></td>
+          </tr>
+          <tr>
+          <td colspan=4><input type="button" value="Roll Your Dice" onclick="calcResult()"></td>
+          </tr>
+        </table>
+</div>
+
+ <div class="nav">
+    <ul id="blah">
+ <li id="navitems"><a href="index.html">Home</a></li> 
+    <li id="navitems"><a href="classes.html">Classes</a></li>
+    <li id="navitems"><a href="rules.html">Rules</a></li>
+         
+        <li id="navitems"><a href="weapons.html">Weapons</a></li>
+        <li id="navitems"><a href="skills.html">Skills</a></li>
+        <li id="navitems"><a href="dice-roller.html">Dice Roller</a></li>
+        <li id="ichor"><a href="index.html">ICHOR</a></li>
+    </ul>
+    
+    
+    </div>
+    
+        <div class="foot">
+    Ichor: Fall of the Gods created by Jonathan Yuen. For more information contact jonathan.yuen95@gmail.com.
+    </div>
+    
+    <script>
+    
+    function calcResult(){
+        var d2die = document.getElementById("d2die").value;
+        var d3die = document.getElementById("d3die").value;
+        var d4die = document.getElementById("d4die").value;
+        var d6die = document.getElementById("d6die").value;
+        var d8die = document.getElementById("d8die").value;
+        var d10die = document.getElementById("d10die").value;
+        var d12die = document.getElementById("d12die").value;
+        var d20die = document.getElementById("d20die").value;
+        var d100die = document.getElementById("d100die").value;
+        
+        var d2mod = document.getElementById("d2mod").value;
+        var d3mod = document.getElementById("d3mod").value;
+        var d4mod = document.getElementById("d4mod").value;
+        var d6mod = document.getElementById("d6mod").value;
+        var d8mod = document.getElementById("d8mod").value;
+        var d10mod = document.getElementById("d10mod").value;
+        var d12mod = document.getElementById("d12mod").value;
+        var d20mod = document.getElementById("d20mod").value;
+        var d100mod = document.getElementById("d100mod").value;
+        
+        var newD2Text = calcRollResult(2,d2die, d2mod);
+        var newD3Text = calcRollResult(3,d3die, d3mod);
+        var newD4Text = calcRollResult(4,d4die, d4mod);
+        var newD6Text = calcRollResult(6,d6die, d6mod);
+        var newD8Text = calcRollResult(8,d8die, d8mod);
+        var newD10Text = calcRollResult(10,d10die, d10mod);
+        var newD12Text = calcRollResult(12,d12die, d12mod);
+        var newD20Text = calcRollResult(20,d20die, d20mod);
+        var newD100Text = calcRollResult(100,d100die, d100mod);
+        
+        repD2Text = document.getElementById("d2result");
+        repD3Text = document.getElementById("d3result");
+        repD4Text = document.getElementById("d4result");
+        repD6Text = document.getElementById("d6result");
+        repD8Text = document.getElementById("d8result");
+        repD10Text = document.getElementById("d10result");
+        repD12Text = document.getElementById("d12result");
+        repD20Text = document.getElementById("d20result");
+        repD100Text = document.getElementById("d100result");
+        
+        repD2Text.innerHTML = newD2Text;
+        repD3Text.innerHTML = newD3Text;
+        repD4Text.innerHTML = newD4Text;
+        repD6Text.innerHTML = newD6Text;
+        repD8Text.innerHTML = newD8Text;
+        repD10Text.innerHTML = newD10Text;
+        repD12Text.innerHTML = newD12Text;
+        repD20Text.innerHTML = newD20Text;
+        repD100Text.innerHTML = newD100Text;
+    }
+    
+    function calcRollResult(x, y, z){
+        var result = 0;
+        for (i = 0; i < y; i++){
+            result += Math.floor((Math.random()*x)+1);
+        }
+        result+=Number(z);
+        return result;
+    }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,213 @@
+body {
+    font-family: "Montserrat";
+    background-color: white;
+    color: rgb(50,50,50);
+    clear:both;
+    margin: 0;
+
+}
+.center{
+    clear:both;
+    display: block;
+    width: 65%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 100px;
+}
+.center2{
+    clear:both;
+    display: block;
+    width: 65%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 100px;
+}
+
+.header {
+    clear: both;
+    text-align: center;
+    padding-top: 9%;
+    padding-bottom: 5%;
+    background-color: crimson;
+    box-shadow: 0px 1px 10px #888888;
+}
+
+.header h1{
+    color: white;
+    font-size: 10em;
+    line-height: 10px;
+    margin-bottom: 60px;
+}
+
+.header h2{
+    display: inline-block;
+    line-height: 1px;
+    color: #2B2925;
+    letter-spacing: 15px;
+}
+
+h2 {
+    color: darkgoldenrod;
+}
+h3 {
+    color: goldenrod;
+}
+
+ul#blah{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(50,50,50);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px -10px 50px black;
+}
+
+li#navitems a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: crimson;
+}
+th{
+    background-color: crimson;
+    color: white;
+}
+th,td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 25%;
+    margin-right:25%;
+}
+tr:nth-child(even) {background-color: palegoldenrod}
+
+.foot {
+    font-size: 75%;
+    color: crimson;
+    position: fixed;
+    bottom: 10px;
+   padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(50,50,50);
+    box-shadow: 0px 4px 11px #888888;
+}
+#classes {
+    margin-top: 10%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+
+#classes td {
+    text-align: center;
+    color: white;
+}
+#classes tr:nth-child(even) {background-color: crimson;}
+
+h1 {
+    color: crimson;
+}
+.image{
+    float:left;
+    margin-bottom:100%;
+    margin-right: 1em;
+}
+
+#ichor a{
+    float: right;
+    padding: 14px 16px;
+    color: crimson;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+#ichor a:hover{
+    color:white;
+}
+
+p {
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.difficulty-table {
+    width: 95%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.sortable {
+    
+    margin-top:120px;
+    width: 75%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 5%
+}
+.sortable td {
+    padding: 0px;
+    text-align: center;
+    font-size: 65%;
+    border-bottom: none;
+}
+.sortable th{
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 65%;
+    border-bottom: none;
+    text-align: center;
+}
+.sortable tr:hover {
+    background-color: salmon;
+}
+.sortable td, .sortable th {
+    border-right: 1px solid #fff;
+}
+.sortable td:first-child {text-align: right}
+
+#roller {
+    margin-left:auto;
+    margin-right: auto;
+    width:65%;
+    
+}
+#roller td, th{
+    text-align:center;
+}
+
+#diceroller {
+    text-align: center;
+}
+
+#roller input[type="button"]{
+    font-family: "Montserrat";
+   padding: 10px 20px 11px;
+    font-size: 1.2em;
+    background-color: rgb(50,50,50);
+    color: crimson;
+    border-radius: 100px;
+    border: none;
+}
+#roller input[type="button"]:hover{
+    
+     transition-duration: 0.4s;
+    background-color: crimson;
+    color: white;
+    box-shadow: 0px 5px 10px #888888;
+}
