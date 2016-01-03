@@ -1,0 +1,140 @@
+body {
+    font-family: "Montserrat";
+    background-color: white;
+    color: rgb(50,50,50);
+    clear:both;
+    margin: 0;
+
+}
+
+ul#blah{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px -10px 50px black;
+}
+
+li#navitems a{
+    float: left;
+    display: block;
+    color: cadetblue;
+    text-align: center;
+    padding: 32px 16px;
+    text-decoration: none;
+}
+
+li#navitems a:hover {
+    background-color: lightcoral;
+    color: white;
+}
+
+
+.foot {
+    font-size: 75%;
+    color: lightcoral;
+    position: fixed;
+    bottom: 10px;
+   padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color:white;
+    box-shadow: 0px 4px 11px #000000;
+}
+
+
+#classes td {
+    text-align: center;
+    color: white;
+}
+
+#ichor a{
+    float: right;
+    padding: 14px 16px;
+    color: lightcoral;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+#ichor a:hover{
+    color:white;
+}
+
+
+
+
+article {
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2em;
+    color: white;
+}
+
+article a{
+    color: salmon;
+}
+
+article a:hover {
+    background-color: #426e70;
+}
+
+article h1 {
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 8px;
+    color: whitesmoke;
+    width: 85%;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: lightcoral;
+    box-shadow: 0px 3px 12px #74B8B8;
+}
+
+article h2 {
+    font-size: 1.6em;
+    text-align: center;
+    letter-spacing: px;
+    color: lightcoral;
+    width: 35%;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 3px 12px #74B8B8;
+    margin-top: -40px;
+    position: relative;
+    z-index: -1;
+}
+
+section {
+    width: 75%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #426e70;
+    padding: 10px 10px;
+    box-shadow: 0px 6px 10px #314C4C ;
+ 
+    
+}
+
+.background-image{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index:-1;
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-image: url(plain.jpg);
+    background-size: cover;
+    -webkit-filter:brightness(1.2) hue-rotate(345deg) saturate(2.9) sepia(.6);
+}
+
+

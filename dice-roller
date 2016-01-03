@@ -2,18 +2,15 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>    <link href="ichor.css" rel='stylesheet' type="text/css">
-    <title>Ichor: Fall of the Gods</title>
+    <title>Dice Roller</title>
 </head>
 <body>
-    <div class="header">
-    <h1>ICHOR</h1>
-        <h2>BLOOD OF THE GODS</h2>
-        </div>
-    <img src="amazons.jpg" width=100%>
     
-    <a style="display:block" href="patch1-5a.html"><div class="index-center">NEW PATCH 1.5a</div></a>
-    
-    <div class="nav">
+    <div class="center">
+      <table>
+</div>
+
+ <div class="nav">
     <ul id="blah">
  <li id="navitems"><a href="index.html">Home</a></li> 
     <li id="navitems"><a href="classes.html">Classes</a></li>
@@ -21,14 +18,13 @@
          
         <li id="navitems"><a href="weapons.html">Weapons</a></li>
         <li id="navitems"><a href="skills.html">Skills</a></li>
-        <li id="navitems"><a href="dice-roller.html">Dice Roller</a></li>
         <li id="ichor"><a href="index.html">ICHOR</a></li>
     </ul>
     
     
     </div>
-
-    <div class="foot">
+    
+        <div class="foot">
     Ichor: Fall of the Gods created by Jonathan Yuen. For more information contact jonathan.yuen95@gmail.com.
     </div>
 </body>

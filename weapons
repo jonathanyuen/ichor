@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>    <link href="ichor.css" rel='stylesheet' type="text/css">
+    <title>Weapon Damage Chart</title>
+</head>
+<body>
+    
+   <p><h2>Classes:</h2></p>
+    <ul>
+    <li>Priest</li>
+    <li>Warrior</li>
+    <li>Archer</li>
+    <li>Farmer/Fisherman</li>
+    <li>Barbarian/Gladiator</li>
+    <li>Philosopher</li>
+    <li>Bard</li>
+    <li>Thief</li>
+    </ul>
+
+
+
+    <div class="nav">
+    <ul id="blah">
+       <li><a href="index.html">Home</a></li> 
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="rules.html">Rules</a></li>
+        
+         <li><a href="weapons.html">Weapon Damage Chart</a></li>
+    </ul>
+    
+    
+    </div>
+    
+</body>
+</html>
