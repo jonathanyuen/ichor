@@ -24,12 +24,12 @@ li#navitems a{
     display: block;
     color: cadetblue;
     text-align: center;
-    padding: 32px 16px;
+    padding: 36px 16px;
     text-decoration: none;
 }
 
 li#navitems a:hover {
-    background-color: lightcoral;
+    background-color: cadetblue;
     color: white;
 }
 
@@ -54,13 +54,15 @@ li#navitems a:hover {
 
 #ichor a{
     float: right;
-    padding: 14px 16px;
+    padding: 15px 16px;
     color: lightcoral;
     font-size: 50px;
     text-decoration: none;
 }
 
 #ichor a:hover{
+    transition-duration: .4s;
+    background-color: lightcoral;
     color:white;
 }
 
